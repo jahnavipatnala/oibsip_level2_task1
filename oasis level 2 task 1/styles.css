@@ -1,0 +1,100 @@
+.header {
+  background-color: #4e525d;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/back-school-decoration-with-pencils-calculator-space_23-2147662344.jpg?w=2000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #27e670;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display-screen {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.display-screen input {
+  width: 100%;
+  border: none;
+  font-size: 28px;
+  text-align: right;
+  padding: 5px;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.button {
+  padding: 20px;
+  background-color: #9da2ab;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #777c86;
+}
+
+.number {
+  background-color: #e8eaed;
+}
+
+.operator {
+  background-color: #ffffff;
+}
+
+.equal {
+  background-color: #f9a826;
+}
+
+.clear {
+  background-color: #1abc9c;
+}
+.input-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.cursor {
+  position: absolute;
+  width: 2px;
+  height: 3em;
+  background-color: black;
+  animation: blink 0.8s infinite;
+  left: calc(100% - 4px); 
+  top: 0;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
